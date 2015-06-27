@@ -6,3 +6,4 @@ categories: jekyll update
 ---
 
 hey what's up we are learning git!
+edit from github.com!

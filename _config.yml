@@ -4,9 +4,16 @@ email: harlo.holmes@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Development blog for the Unveillance team.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://github.com/unveillance" # the base hostname & protocol for your site
+url: "https://unveillance.github.io" # the base hostname & protocol for your site
 twitter_username: harlo
 github_username:  unveillance
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      permalink: /:year/:month/:day/:title.html

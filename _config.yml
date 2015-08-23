@@ -16,4 +16,4 @@ defaults:
     scope:
       type: "posts"
     values:
-      permalink: /:year/:month/:day/:title.html
+      permalink: :year/:month/:day/:title.html

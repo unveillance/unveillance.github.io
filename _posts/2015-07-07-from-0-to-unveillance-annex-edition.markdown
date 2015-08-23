@@ -17,7 +17,37 @@ The core Unveillance Annex package is included as a submodule in the project's `
 
 ### 1. Create a `vars.json` manifest
 
-The `vars.json` manifest instructs Unveillance how to handle each type of document it'll encounter.  Since we're only dealing with images, I've set the `MIME_TYPES` directive to an object describing the mapping between the mime type name, and its corresponding file extension.  The `MIME_TYPE_MAP` is the inverse of `MIME_TYPES`.  (In the future, this could be programmed automatically, but for now, it's required.)  
+The `vars.json` manifest instructs Unveillance how to handle each type of document it'll encounter.  Here's what ours looks like:
+
+```
+{
+	"ASSET_TAGS" : {
+		"DLXDD_DD" : "deeplab-x-deepdream_deepdream",
+		"DLXDD_AVI" : "deeplab-x-deepdream_avi",
+		"DLXDD_GIF" : "deeplab-x-deepdream_gif",
+		"DLXDD_DERIV" : "deeplab-x-deepdream_main-derivative"
+	},
+	"MIME_TYPES" : {
+		"jpg" : "image/jpeg",
+		"png" : "image/png"
+	},
+	"MIME_TYPE_MAP" : {
+		"image/jpeg" : "jpg",
+		"image/png" : "png"
+	},
+	"MIME_TYPE_TASKS" : {
+		"image/jpeg" : [
+			"DeepDream.create_deepdream.create_deepdream"
+		],
+		"image/png" : [
+			"DeepDream.create_deepdream.create_deepdream"
+		]
+	}
+}
+```
+
+
+Since we're only dealing with images, I've set the `MIME_TYPES` directive to an object describing the mapping between the mime type name, and its corresponding file extension.  The `MIME_TYPE_MAP` is the inverse of `MIME_TYPES`.  (In the future, this could be programmed automatically, but for now, it's required.)  
 
 The `MIME_TYPE_TASKS` directive is an object enumerating the tasks each document of a specified mime type must go through when it enters the system.  You'll notice, the tasks correspond to python modules outlined in our `Tasks` folder.
 

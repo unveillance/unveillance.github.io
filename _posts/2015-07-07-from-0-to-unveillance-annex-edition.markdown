@@ -2,10 +2,10 @@
 layout: post
 title: "From 0 to Unveillance (Annex edition)"
 date: 2015-07-07 11:00:13
-tags: annex-backend how-to code-notes
+tags: annex-backend how-to code-notes deepdream
 ---
 
-Unveillance can be used for a variety of things.  It has been designed to accommodate just about any type of project that involves the automated batch processing of documents.  [Here's an example](https://github.com/DeepLab/deeplab_x_deepdream_annex) of using the Annex component to automatically create deepdream images submitted via Slack!
+Unveillance can be used for a variety of things.  It has been designed to accommodate just about any type of project that involves the automated batch processing of documents.  [Here's an example](https://github.com/DeepLab/deeplab_x_deepdream_annex) I wrote using the Annex component to automatically create [deep dream images](http://googleresearch.blogspot.com/2015/07/deepdream-code-example-for-visualizing.html) submitted via Slack!
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/o3SExuCl8_k" frameborder="0" allowfullscreen></iframe>
 

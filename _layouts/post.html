@@ -5,7 +5,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.categories %} • {% for c in page.categories %}<a class="uv_cat_label" href="/categories/{{ c }}">{{ c }}</a> {% endfor %}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.tags %} • {% for c in page.tags %}<a class="uv_cat_label" href="/tags/{{ c }}">{{ c }}</a> {% endfor %}{% endif %}</p>
   </header>
 
   <article class="post-content">

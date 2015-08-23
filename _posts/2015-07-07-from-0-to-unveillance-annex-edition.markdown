@@ -2,7 +2,7 @@
 layout: post
 title: "From 0 to Unveillance (Annex edition)"
 date: 2015-07-07 11:00:13
-tags: annex-backend how-to code-notes deepdream
+tags: annex-backend how-to code-notes deepdream #bbhmm rihanna
 ---
 
 Unveillance can be used for a variety of things.  It has been designed to accommodate just about any type of project that involves the automated batch processing of documents.  [Here's an example](https://github.com/DeepLab/deeplab_x_deepdream_annex) I wrote using the Annex component to automatically create [deep dream images](http://googleresearch.blogspot.com/2015/07/deepdream-code-example-for-visualizing.html) submitted via Slack!
@@ -13,7 +13,7 @@ On my own machine at home, I've set up the Deepdream toolkit, and am running Unv
 
 ## Unveillance Annex
 
-The core Unveillance Annex package is included as a submodule in the project's `lib` folder.  Since the Annex does all the heavy lifting, there are only two things I need to do to make my deep dream machine.
+The core Unveillance Annex package is included as a submodule in the project's `lib` folder.  Since the Annex does all the heavy lifting, there are only three things I need to do to make my deep dream machine.
 
 ### 1. Create a `vars.json` manifest
 

@@ -3,6 +3,7 @@ layout: post
 title:  "From 0 to Unveillance (Frontend Edition)"
 date:   2015-07-06 10:58:31
 categories: frontend-interface how-to code-notes
+permalink: /:year/:month/:day/:title.html
 ---
 
 These documents should inform our development team, and anyone else keeping up with the project, on how to encorporate the Unveillance engine into their own projects.  Taking some questions from our lead frontend dev, Jonny, as our starting point...
